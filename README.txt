@@ -1,8 +1,8 @@
-Welcome to ExceptionalCounts, a Java program designed to take a file input from the user and print the number of characters, words, and lines in that file. 
+Welcome to NoExceptions, a Java program designed to take a file input from the user and print the number of characters, words, and lines in that file. 
 
 Example: 
 
-Enter the file name: ----\----\---\-----\ExceptionalCounts\Mary's Little Lamb.txt
+Enter the file name: ----\----\---\-----\NoExceptions\input1.txt
 Number of characters: 89
 Number of words: 22
 Number of lines: 4
@@ -21,19 +21,19 @@ Eclipse
 Command Prompt or Terminal
 
 Clone the Repository:
-git clone https://github.com/3N16MV/ExceptionalCounts
+git clone https://github.com/3N16MV/NoExceptions
 
 Compile the program:
 
-javac ExceptionalCounts.java
+javac NoExceptions.java
 
 Run the program:
 
-java ExceptionalCounts
+java NoExceptions
 
 Contributions
 
-Contributions to improve ExceptionalCounts are welcome. Feel free to submit pull requests or open issues with suggestions for improvements.
+Contributions to improve NoExceptions are welcome. Feel free to submit pull requests or open issues with suggestions for improvements.
 
 License
 
