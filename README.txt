@@ -2,10 +2,18 @@ Welcome to NoExceptions, a Java program designed to take a file input from the u
 
 Example: 
 
-Enter the file name: ----\----\---\-----\NoExceptions\input1.txt
-Number of characters: 89
-Number of words: 22
-Number of lines: 4
+Entire the file name: ----\----\---\-----\NoExceptions\Input1.txt
+
+Average: 28.333333333333332
+Smallest value: 1.0
+Largest value: 101.0
+Range: 100.0
+
+OR
+
+Entire the file name: ----\----\---\-----\NoExceptions\Input1.txt
+
+File not found OR File contents invalid OR An I/O Error occurred while reading the file
 
 Installation: 
 
