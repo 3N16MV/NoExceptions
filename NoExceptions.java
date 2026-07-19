@@ -12,6 +12,8 @@
 //Integrated the DataAnalyzer functionality into the final exception handling
 //implementation to produce the final project submission.
 
+//Correcting syntax errors and finalizing assignment alignment for final commit.
+
 import java.io.File;
 import java.io.FileNotFoundException;
 
@@ -51,10 +53,10 @@ public class NoExceptions {
                     double min = data[0];
                     double max = data[0];
 
-                    for (double v : data) {
-                        sum += v;
-                        if (v < min) min = v;
-                        if (v > max) max = v;
+                    for (double value : data) {
+                        sum += value;
+                        if (value < min) min = value;
+                        if (value > max) max = value;
                     }
 
                     double avg = sum / data.length;
@@ -65,11 +67,11 @@ public class NoExceptions {
                             new Object[] { data.length, avg, min, max, range });
                 }
 
-            } catch (FileNotFoundException exception) {
+            } catch (FileNotFoundException e) {
                 logger.warning("File not found: " + fileName);
-            } catch (NoSuchElementException exception) {
+            } catch (NoSuchElementException e) {
                 logger.warning("File contents invalid: " + fileName);
-            } catch (SecurityException exception) {
+            } catch (SecurityException e) {
                 logger.warning("Permission denied. Unable to access file: " + fileName);
             }
 
@@ -83,11 +85,7 @@ public class NoExceptions {
         try (Scanner fileScanner = new Scanner(file)) {
 
             while (fileScanner.hasNext()) {
-                if (fileScanner.hasNextDouble()) {
-                    values.add(fileScanner.nextDouble());
-                } else {
-                    throw new NoSuchElementException();
-                }
+                values.add(fileScanner.nextDouble());
             }
         }
 
