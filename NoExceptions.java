@@ -1,8 +1,7 @@
 //Programmers: Manuel Brugues Amaro, Brittany Burson, & Alexis Lariviere
 //Module: 4 Problem 2
 //Date: 07/16/2026
-//Email Address: m.bruguesamaro@student.nu.edu,
-// b.burson4211@student.nu.edu & t.lariviere7089@student.nu.edu
+//Email Address: m.bruguesamaro@student.nu.edu,  b.burson4211@student.nu.edu & t.lariviere7089@student.nu.edu
 //Class: CSC262
 //Description: Java program designed to read a set of floating-point
 //numbers from user input, calculate the average, the smallest and largest
@@ -54,34 +53,16 @@ public class NoExceptions {
 
                     for (double v : data) {
                         sum += v;
-
-                        if (v < min) {
-                            min = v;
-                        }
-
-                        if (v > max) {
-                            max = v;
-                        }
+                        if (v < min) min = v;
+                        if (v > max) max = v;
                     }
 
                     double avg = sum / data.length;
                     double range = max - min;
 
-                    logger.log(
-                            java.util.logging.Level.INFO,
-                            "Count: {0}\n"
-                                    + "Average: {1,number,#.0000}\n"
-                                    + "Min: {2,number,#.0000}\n"
-                                    + "Max: {3,number,#.0000}\n"
-                                    + "Range: {4,number,#.0000}\n",
-                            new Object[]{
-                                    data.length,
-                                    avg,
-                                    min,
-                                    max,
-                                    range
-                            }
-                    );
+                    logger.log(java.util.logging.Level.INFO,
+                            "Count: {0}\nAverage: {1,number,#.0000}\nMin: {2,number,#.0000}\nMax: {3,number,#.0000}\nRange: {4,number,#.0000}\n",
+                            new Object[] { data.length, avg, min, max, range });
                 }
 
             } catch (FileNotFoundException exception) {
@@ -94,8 +75,7 @@ public class NoExceptions {
 
         }
     }
-    public static double[] readDataFromFile(String fileName)
-            throws FileNotFoundException, NoSuchElementException {
+    public static double[] readDataFromFile(String fileName) throws FileNotFoundException, NoSuchElementException {
 
         File file = new File(fileName);
         ArrayList<Double> values = new ArrayList<>();
